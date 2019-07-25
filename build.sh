@@ -3,6 +3,7 @@
 # windows系统采用的编译器为mingw编译器
 # 脚本解释器采用bash
 # windows下的bash解释器为git的bash解释器
+# 设置换行符为LF 
 
 # 创建build文件夹
 if [ ! -e build ] ;then
@@ -23,6 +24,7 @@ elif [ ${osname:0:5}  == "Linux" ];then
     echo  "GNU/Linux操作系统"
     cmake ..
     make
+    make doc
     make install
 elif [ ${osname:0:10} == "MINGW32_NT" ];then
     echo  "Windows NT操作系统"
@@ -33,7 +35,8 @@ elif [ ${osname:0:10} == "MINGW32_NT" ];then
     else
         cmake .. -G "MinGW Makefiles"
     fi
-    mingw32-make
+    mingw32-make 
+    mingw32-make  doc
     mingw32-make install
 fi
 
