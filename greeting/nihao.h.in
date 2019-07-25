@@ -1,0 +1,14 @@
+#include <stdio.h>
+#cmakedefine  ENGLISH
+#ifdef __cplusplus 
+extern "C" {
+#endif
+/**
+ * @brief 用不同语言表示你好
+ * 
+ * @return int 成功返回0
+ */
+int nihao();
+#ifdef __cplusplus 
+}
+#endif
