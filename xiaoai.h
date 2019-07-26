@@ -8,7 +8,7 @@
  * @brief    
  * @version  0.0.1
  * 
- * Last Modified:  2019-07-25
+ * Last Modified:  2019-07-26
  * Modified By:    詹长建 (2233930937@qq.com)
  * 
  */
@@ -56,4 +56,4 @@ public:
     int run();
 };
 
-#endif /* XiAOAI_H */
+#endif // XiAOAI_H 
